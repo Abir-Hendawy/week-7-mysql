@@ -2,7 +2,7 @@
 -- question 1
 SELECT `orderdetails`.`orderNumber` AS `orderNumber`,
 sum(`orderdetails`.`quantityOrdered` * `orderdetails`.`priceEach`) AS `total_Payment` FROM `orderdetails`
-GROUP BY `orderdetails`.`orderNumber``orderNumber`;
+GROUP BY `orderdetails`.`orderNumber`;
 
 -- question 2
 SELECT concat(`emp`.`firstName`,' ',`emp`.`lastName`) 
